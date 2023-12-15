@@ -1,0 +1,20 @@
+15-12-2023 11:48:03.135 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+15-12-2023 11:48:03.155 [Gauge] [INFO] Initializing specs cache with 1 specs
+15-12-2023 11:48:03.156 [Gauge] [DEBUG] Adding specs from C:\Users\alvar\IdeaProjects\AutomationTestITO\specs\example.spec
+15-12-2023 11:48:03.157 [Gauge] [INFO] Initializing steps cache with 1 steps
+15-12-2023 11:48:03.158 [Gauge] [INFO] Gauge daemon initialized and listening on port: 51000
+15-12-2023 11:48:03.171 [Gauge] [DEBUG] Watching directory: C:\Users\alvar\IdeaProjects\AutomationTestITO\specs
+15-12-2023 11:48:03.172 [Gauge] [DEBUG] Found 1 files
+15-12-2023 11:48:07.804 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+15-12-2023 11:48:07.805 [Gauge] [INFO] Initializing specs cache with 1 specs
+15-12-2023 11:48:07.805 [Gauge] [DEBUG] Adding specs from C:\Users\alvar\IdeaProjects\AutomationTestITO\specs\example.spec
+15-12-2023 11:48:07.805 [Gauge] [INFO] Initializing steps cache with 1 steps
+15-12-2023 11:48:07.805 [Gauge] [INFO] Gauge daemon initialized and listening on port: 51009
+15-12-2023 11:48:07.805 [Gauge] [DEBUG] Watching directory: C:\Users\alvar\IdeaProjects\AutomationTestITO\specs
+15-12-2023 11:48:07.805 [Gauge] [DEBUG] Found 1 files
+15-12-2023 12:02:29.724 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Open the Gauge homepage"}
+15-12-2023 12:02:29.725 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Open the Gauge homepage"  parameterizedStepValue:"Open the Gauge homepage"}}
+15-12-2023 12:02:29.735 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Go to Gauge Get Started Page"}
+15-12-2023 12:02:29.736 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Go to Gauge Get Started Page"  parameterizedStepValue:"Go to Gauge Get Started Page"}}
+15-12-2023 12:02:29.736 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Ensure installation instructions are available"}
+15-12-2023 12:02:29.736 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Ensure installation instructions are available"  parameterizedStepValue:"Ensure installation instructions are available"}}
