@@ -6,35 +6,31 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class DriverFactory {
 
     // Get a new WebDriver Instance.
     // There are various implementations for this depending on browser. The required browser can be set as an environment variable.
     // Refer http://getgauge.io/documentation/user/current/managing_environments/README.html
-    public static WebDriver getDriver() {
+    public static WebDriver getDriver(String testName) {
 
-        String browser = System.getenv("BROWSER");
-        browser = (browser == null) ? "CHROME": browser;
-
-        switch (browser) {
-            case "IE":
-                WebDriverManager.iedriver().setup();
+        String browser = System.getenv(SystemConstants.BROWSER);
+        switch (browser)
+        {
+            case SystemConstants.EDGE:
                 return new InternetExplorerDriver();
-            case "FIREFOX":
-                WebDriverManager.firefoxdriver().setup();
+            case SystemConstants.FIREFOX:
+                DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+                capabilities.setCapability("marionette",true);
                 return new FirefoxDriver();
-            case "CHROME":
+            case SystemConstants.CHROME:
             default:
-                WebDriverManager.chromedriver().setup();
-
-	            ChromeOptions options = new ChromeOptions();
-	            if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
-	                options.addArguments("--headless");
-	                options.addArguments("--disable-gpu");
-	            }
-
-	            return new ChromeDriver(options);
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.setCapability("name", testName);
+                chromeOptions.setAcceptInsecureCerts(true);
+                chromeOptions.addArguments("--allow-insecure-localhost");
+                return new ChromeDriver(chromeOptions);
         }
     }
 }
