@@ -3,7 +3,10 @@ Code challenge
 
 Code challenge 1st scenario
 -----------
-@Success_Scenario
+
+Tags: Success_Scenario
+This scenario has changed in the validations of some labels because "El Salvador & Nicaraguar" is no
+longer that label and "Bacolod City, Philippines" is no longer there either.
 * Navigate to "https://www.google.com"
 * Input "Focus Services" in 'Search' text box
 * Submit the search from 'Google' page
