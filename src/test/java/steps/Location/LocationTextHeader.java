@@ -1,4 +1,4 @@
-package steps.ITO;
+package steps.Location;
 
 import com.thoughtworks.gauge.Step;
 import object.ItoPageObject;

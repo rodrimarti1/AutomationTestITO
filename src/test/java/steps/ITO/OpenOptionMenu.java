@@ -4,7 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.thoughtworks.gauge.Step;
 import object.ItoPageObject;
 
-public class OpenLocationPage {
+public class OpenOptionMenu {
     ItoPageObject itoPageObject = new ItoPageObject();
     @Step("When the <optionMenuValue> tab is clicked")
     public void whenTheOptionMenuValueTabIsClicked(String optionMenuValue) throws InterruptedException {

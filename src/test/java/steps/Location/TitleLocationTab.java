@@ -1,4 +1,4 @@
-package steps.ITO;
+package steps.Location;
 
 import com.codeborne.selenide.Condition;
 import com.thoughtworks.gauge.Step;
