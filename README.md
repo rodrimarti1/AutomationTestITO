@@ -1,33 +1,39 @@
-## About this template
+##Prerequisites:
 
-This is a template to get started with a Gauge project that uses Selenium as the driver to interact with a web browser.
+* Have a JDK installed in the computer (in my case, I have a JDK11.0.12)
+* Have Intellij installed in the computer(in my case have the latest version)
+* Check if in the "environment variable" have "JAVA_HOME" variable with the value of JDK installed, if not create
 
-## Installing this template
+## Installing gauge and complement
 
-    gauge --install java_maven_selenium
+Step1:
+* Install Gage framework from https://docs.gauge.org/getting_started/installing-gauge.html?os=windows&language=javascript&ide=vscode
+* Check if in the "environment variable" have "GAUGE_HOME" variable with the value "C:\Program Files\Gauge\bin" if not create
+* Check if in the "environment variable" have in "Path" variable have the value "C:\Program Files\Gauge\bin" if not add
 
-## Building on top of this template
+Step2:
+* In Intellij download de plugin Gauge
 
-### Defining Specifications
+Step3:
+* Install chocolatey following the steps in https://chocolatey.org/install
+* Then for to install the web driver execute the command "choco install selenium-all-drivers" in powershell with administrator access
+* Check if in the "environment variable" have "ChocolateyInstall" variable with the value "C:\ProgramData\chocolatey"
+* Check if in the "environment variable" have in "Path" variable have the value "C:\tools\selenium" if not add
+* Then verify the Chrome application version and go to the website "https://chromedriver.chromium.org/downloads", if the chrome application not the latest download the correct chrome driver
+* Go to the "C:\tools\selenium" and replace the chrome driver if is necessary
 
-* This template includes a sample specification which opens up a browser and navigates to `Get Started` page of Gauge.
-* Add more specifications on top of sample specification.
+# For more details view the file "Configure.docx" in target folder. 
 
-Read more about [Specifications](http://getgauge.io/documentation/user/current/specifications/README.html)
+### For the Execution
 
-### Writing the implementations
+Step1:
+* In Intellij open the spec file "TestAutomationITO"
 
-This is where the java implementation of the steps would be implemented. Since this is a Selenium based project, the java implementation would invoke Selenium APIs as required.
+Step2:
+* On "TestAutomationITO" do right click and select menu "More Run/Debug" Then click on "Modify Run Configuration..."
 
-_We recommend considering modelling your tests using the [Page Object](https://github.com/SeleniumHQ/selenium/wiki/PageObjects) pattern, and the [Webdriver support](https://github.com/SeleniumHQ/selenium/wiki/PageFactory) for creating them._
+Step3:
+* In "environmental variable" write "Browser=Chrome" and in "Tags:" fill with the name of the test and then save
 
-- Note that every Gauge step implementation is annotated with a `Step` attribute that takes the Step text pattern as a parameter.
-Read more about [Step implementations in Java](http://getgauge.io/documentation/user/current/test_code/java/java.html)
-
-### Execution
-
-* You can execute the specification as:
-
-```
-mvn test
-```
+Step4:
+* Run the test
