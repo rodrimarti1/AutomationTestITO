@@ -1,4 +1,10 @@
-logs/
+logs
 target/
-reports
+reports/
 env/
+*.json
+*.iml
+*.html
+*.log
+build/
+.gauge/screenshots
