@@ -11,7 +11,9 @@ public class OpenSocialMedia {
 
     @Step("When the <socialMediaValue> is clicked within 'Footer' section")
     public void whenTheSocialMediaValueIsClickedWithinFooterSection(String socialMediaValue) throws InterruptedException {
+        //Open social media with a specific string value
         footerPageObject.socialMedia(socialMediaValue).scrollTo().click();
+        //Switch to new open tab
         ArrayList<String> tabs = new ArrayList<String> (Driver.webDriver.getWindowHandles());
         Driver.webDriver.switchTo().window(tabs.get(1));
     }

@@ -9,6 +9,7 @@ public class ValidateNowHiringIsDisplayed {
     ItoPageObject itoPageObject = new ItoPageObject();
     @Step("Then validate the 'Now hiring' button is displayed")
     public void thenValidateTheNowHiringButtonIsDisplayed() throws InterruptedException {
+        //Validate with a boolean result if a hiring button is displayed
         Assertions.assertThat(itoPageObject.nowHiringButton().waitUntil(Condition.visible, 25000).scrollTo().isDisplayed())
                 .withFailMessage("The now hiring button don't display")
                 .isTrue();

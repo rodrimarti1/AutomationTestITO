@@ -9,6 +9,7 @@ public class ValidateLocationNotDisplay {
 
     ItoPageObject itoPageObject = new ItoPageObject();
     @Step("Then validate the <inputTitleValue> not title is displayed")
+    //Validate with a boolean result if a specific value is displayed
     public void thenValidateTheInputTitleValueNotTitleIsDisplayed(String inputTitleValue) throws InterruptedException {
         Assertions.assertThat(itoPageObject.centralAmericaTitle().is(Condition.text(inputTitleValue)))
                 .withFailMessage("The "+ inputTitleValue +" title don't display")

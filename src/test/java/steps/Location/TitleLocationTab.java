@@ -9,6 +9,7 @@ public class TitleLocationTab {
     ItoPageObject itoPageObject = new ItoPageObject();
     @Step("Then validate the <inputTitleValue> title is displayed")
     public void thenValidateTheInputTitleValueTitleIsDisplayed(String inputTitleValue) throws InterruptedException {
+        //Validate the title location is displayed
         Assertions.assertThat(itoPageObject.centralAmericaTitle().waitUntil(Condition.visible, 2555).text())
                 .withFailMessage("The "+ inputTitleValue +" title don't display")
                 .containsIgnoringCase(inputTitleValue);

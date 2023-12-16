@@ -8,6 +8,7 @@ import org.assertj.core.api.Assertions;
 public class LocationTextHeader {
     ItoPageObject itoPageObject = new ItoPageObject();
     @Step("Then validate the <inputLocationText> title location is displayed")
+    //Validate the location header
     public void thenValidateTheInputLocationTextTitleLocationIsDisplayed(String inputLocationText) throws InterruptedException {
         Assertions.assertThat(itoPageObject.cityCatalog().toString())
                 .withFailMessage("The "+ inputLocationText +" title don't display")
