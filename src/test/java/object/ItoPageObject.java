@@ -15,9 +15,8 @@ public class ItoPageObject {
         return $(By.cssSelector(".avia-button.avia-color-custom.avia-icon_select-yes-right-icon.avia-position-left.avia-size-medium > .avia_iconbox_title")).waitUntil(visible, 25000);
     }
 
-    public static SelenideElement locationTab() {
-        Condition visible = Condition.and("There was a problem trying to find the 'Location' button.", Condition.visible);
-        return $(By.cssSelector("#menu-item-4726 > a > span.avia-menu-text")).waitUntil(visible, 25000);
+    public static ElementsCollection optionMenuTab() {
+        return $$(By.cssSelector(".menu-item > a > span.avia-menu-text"));
     }
 
     public static ElementsCollection locationsTabsSelected(){
@@ -46,11 +45,10 @@ public class ItoPageObject {
 
     public static SelenideElement centralAmericaTitle(){
         Condition visible = Condition.and("There was a problem trying to find the 'Central america' header.", Condition.visible);
-        return $(By.cssSelector(".av-animation-delay-container.av-layout-tab.avia-builder-el-84.el_after_av_tab_sub_section.el_before_av_tab_sub_section  .container > .av_textblock_section  h2")).waitUntil(visible, 25000);
+        return $(By.cssSelector("[data-tab-section-id='central-america'] h2")).waitUntil(visible, 25000);
     }
 
-    public static SelenideElement asiaTitle(){
-        Condition visible = Condition.and("There was a problem trying to find the 'asia' header.", Condition.visible);
-        return $(By.cssSelector(".av-zero-column-padding.av_one_half.avia-builder-el-103.el_after_av_hr.el_before_av_one_half.first.flex_column.flex_column_div > .av_textblock_section b")).waitUntil(visible, 25000);
+    public static ElementsCollection cityCatalog(){
+        return $$(By.cssSelector(".av_textblock_section .avia_textblock h3 b"));
     }
 }
