@@ -3,7 +3,7 @@ Code challenge
 
 Code challenge 1st scenario
 -----------
-
+@Success_Scenario
 * Navigate to "https://www.google.com"
 * Input "Focus Services" in 'Search' text box
 * Submit the search from 'Google' page
@@ -17,3 +17,6 @@ Code challenge 1st scenario
 * Open "Asia" location tab
 * Validate the "Bacolod City, Lacson Street" title location is displayed
 * Open "Careers" page
+* Input "Generalist" in 'Search' text box within 'Career' Page
+* Open "Facebook" link
+* Validate the "https://www.facebook.com/focusservicesllc/" as a current URL
