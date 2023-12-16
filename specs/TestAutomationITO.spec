@@ -23,3 +23,24 @@ longer that label and "Bacolod City, Philippines" is no longer there either.
 * Input "Generalist" in 'Search' text box within 'Career' Page
 * Open "Facebook" link
 * Validate the "https://www.facebook.com/focusservicesllc/" as a current URL
+
+Code challenge 2st scenario
+-----------
+Tags: Success_Scenario_Bad_Data
+This scenario have the data requested in the file
+* Navigate to "https://www.google.com"
+* Input "Focus Services" in 'Search' text box
+* Submit the search from 'Google' page
+* Validate the "https://www.focusservices.com" is displayed in search result page
+* Open the "https://www.focusservices.com" form search result page
+* Validate the 'Now hiring' button is displayed
+* Open "Location" page
+* Validate the "North America" tab is selected
+* Open "Central America" location tab
+* Validate the "El Salvador & Nicaragua" not title is displayed
+* Open "Asia" location tab
+* Validate the "Bacolod City, Philippines" title location is not displayed
+* Open "Careers" page
+* Input "Generalist" in 'Search' text box within 'Career' Page
+* Open "Facebook" link
+* Validate the "https://www.facebook.com/focusservicesllc/" as a current URL
