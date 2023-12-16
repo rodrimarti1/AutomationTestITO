@@ -9,5 +9,6 @@ public class InputValueToSearch {
     @Step("When the <valueSearchValue> is input within 'Search' text box")
     public void whenTheInputSearchValueIsInputWithinSearchTextBox(String valueSearchValue) {
         googlePageObject.searchTextBox().sendKeys(valueSearchValue);
+        googlePageObject.searchTextBox().pressEscape();
     }
 }
